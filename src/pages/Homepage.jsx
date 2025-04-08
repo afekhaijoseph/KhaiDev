@@ -11,13 +11,13 @@ const Homepage = () => {
   return (
     <div className='font-montserrat text-gray-300'>
       <NavBar/>
-      <div className='mx-6'>
+      <div className='w-11/12 mx-auto md:w-3/4'>
         <LandingPage/>
         <Services/>
         <About/>
         </div>
         <Skills/>
-        <div className='mx-6'>
+        <div className='w-11/12 mx-auto'>
         <Projects/>
         <Contact/>
         <Footer/>

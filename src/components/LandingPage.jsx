@@ -1,8 +1,64 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faXTwitter, faGithub, faLinkedinIn, faWhatsapp} from '@fortawesome/free-brands-svg-icons';
-import Image from './Image';
 import {motion} from 'framer-motion'
+import Image from './Image';
 
+const imageVariants = {
+  init : {
+    opacity: 0,
+    x: -100,
+  },
+  final : {
+    opacity: 1,
+    x: 0,
+    transition: {
+      delay: 0.2,
+      duration: 0.3,
+      ease: "easeInOut",
+      type: 'spring',
+      stiffness: '120',
+    }
+  }
+}
+
+const buttonVariants = {
+  init: {
+    opacity: 0,
+    x: -100
+  },
+  final: {
+    opacity: 1,
+    x: 0,
+    transition: {
+      delay: 1,
+      type: 'spring',
+      stiffness: 100,
+      damping: 10
+    }
+  }
+};
+
+const hireMeHover = {
+  scale: 1.1,
+  textShadow: "0px 0px 8px rgba(255, 255, 255, 0.8)",
+  boxShadow: "0px 0px 8px rgba(255, 255, 255, 0.8)",
+  transition: {
+    duration: 0.5,
+    repeat: Infinity,
+  }
+}
+
+const resumeHover = {
+  scale: 1.1,
+  textShadow: "0px 0px 8px rgba(238, 133, 46, 0.8)",
+  boxShadow: "0px 0px 8px rgba(238, 133, 46, 0.8)",
+  transition: {
+    duration: 0.5,
+    repeat: Infinity,
+  }
+}
+
+            
 
 const LandingPage = () => {
   return (
@@ -11,12 +67,13 @@ const LandingPage = () => {
         initial= {{opacity: 0}} 
         animate= {{opacity: 1}} 
         transition={{ delay: 0.7, type: 'tween', duration:0.7}} 
-        className="Introduction flex flex-col gap-4 h-screen">
-          <div className='mt-6 flex flex-col'>
+        className="Introduction flex flex-col gap-10 h-screen justify-between items-center w-full md:flex-row">
+          <div className='flex flex-col gap-6 items-center md:items-start md:basis-full'>
+          <div className='mt-6 md:mt-0'>
               <p className='self-start tracking-wider'>Hi there, Afekhai Joseph here.</p>
           </div>
             <h1 className='text-accent text-5xl mb-4 text-transparent bg-clip-text bg-gradient-to-b from-yellow-500 via-accentshade to-yellow-500'>A Pro Frontend Developer.</h1>  
-            <div className="flex justify-around w-full my-5">
+            <div className="flex justify-between w-fit gap-4 md:mx-0">
               <motion.div whileHover={{scale: 1.2}}>
                 <FontAwesomeIcon icon={faXTwitter} size='2x'/>
               </motion.div>
@@ -31,19 +88,15 @@ const LandingPage = () => {
               </motion.div>  
             </div>
             <div className=''></div>
-            <div className="flex w-11/12 mx-auto my-3 gap-3 pt-4 grow">
-            <motion.button
-            initial = {{opacity: 0, x:-100}}
-            animate = {{opacity: 1, x: 0}} 
-            transition={{delay: 1, type: 'spring', stiffness: 100, damping: 10}}
-            whileHover={{scale: 1.2, color: 'red'}} className=' border h-fit border-accent rounded-md p-1 text-accent basis-full'>Hire me</motion.button>
-            <motion.button 
-            initial = {{opacity: 0, x: 100}}
-            animate = {{opacity: 1, x: 0}} 
-            transition={{delay: 1, type: 'spring', stiffness: 100, damping: 10}}
-            className='bg-accent h-fit rounded-md p-1 basis-full text-white'>Download CV</motion.button>
+            <div className="flex w-11/12 mx-auto my-3 gap-4 pt-4 grow md:mx-0">
+            <motion.button variants={{...buttonVariants, hover: hireMeHover}} initial = 'init' animate='final' whileHover='hover' className=' bg-accent h-fit rounded-md p-1 basis-full text-white'>Hire me</motion.button>
+            <motion.button variants={{...buttonVariants, hover: resumeHover}} initial = 'init' animate='final' whileHover='hover' className='border h-fit border-accent rounded-md p-1 text-accent basis-full'>Download CV</motion.button>
             </div>
-            <Image/>
+          </div>
+          <motion.div variants={imageVariants} initial = 'init' whileInView= 'final' viewport={{once:true}} className='w-full mt-32 md:max-w-[350px] md:ml-auto md:mt-20 md:basis-full'>
+              <Image/>
+          </motion.div>
+          
         </motion.div>
     </div>
   )

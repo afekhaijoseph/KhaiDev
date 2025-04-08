@@ -11,6 +11,7 @@ export default {
         pritext: "#d9d9d9",
         sectext: "#dfdfd9",
         background: "#1c1b2d",
+        secondBg: "#2a2940",
         shadow: "#27253d",
       },
       fontFamily: {

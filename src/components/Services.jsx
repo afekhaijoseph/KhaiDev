@@ -35,15 +35,9 @@ const itemVariantOne = {
     final: {
         opacity: 1,
         y:0,
-        transition: {
-            duration: 0.4,
-        },
     }
 
 }
-
-
-
 
 
 const Services = () => {
@@ -51,7 +45,7 @@ const Services = () => {
 <motion.div variants={servVariants} initial= "init" whileInView='final' viewport={{ once: true }} className=' my-14' >
         <motion.h3  variants = {itemVariantOne} className='text-center font-semibold text-2xl'>Services</motion.h3>
         <motion.p variants = {itemVariantOne} className='py-4 text-center'>I offer alot of services which include</motion.p>
-        <div className='grid grid-cols-2 gap-4 text-center'>
+        <div className='grid grid-cols-2 gap-4 text-center md:grid-cols-3'>
             <motion.div variants = {itemVariantOne} className='shadow-md border border-gray-500 rounded-md flex flex-col items-center p-2'>
                 <img src={custom} alt="" className='size-16'/>
                 <p className='text-accent'>custom web pages</p>
