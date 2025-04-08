@@ -9,7 +9,7 @@ const svgVariant = {
   final: {
     scale: 1,
     transition: {
-      staggerChildren: 0.3,
+      staggerChildren: 0.2,
       delayChildren: 0.5, 
     }
   }

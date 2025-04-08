@@ -67,8 +67,8 @@ const LandingPage = () => {
         initial= {{opacity: 0}} 
         animate= {{opacity: 1}} 
         transition={{ delay: 0.7, type: 'tween', duration:0.7}} 
-        className="Introduction flex flex-col gap-10 h-screen justify-between items-center w-full md:flex-row">
-          <div className='flex flex-col gap-6 items-center md:items-start md:basis-full'>
+        className="Introduction flex flex-col gap-10 justify-between items-center w-full md:flex-row md:h-screen">
+          <div className='flex flex-col gap-6 md:items-start md:basis-full'>
           <div className='mt-6 md:mt-0'>
               <p className='self-start tracking-wider'>Hi there, Afekhai Joseph here.</p>
           </div>
