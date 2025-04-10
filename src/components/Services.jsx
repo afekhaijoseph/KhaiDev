@@ -49,33 +49,35 @@ const Services = () => {
             <motion.div variants = {itemVariantOne} className='shadow-md border border-gray-500 rounded-md flex flex-col items-center p-2'>
                 <img src={custom} alt="" className='size-16'/>
                 <p className='text-accent'>custom web pages</p>
-                <p className='text-sm'>Very well then</p>
+                <p className='text-sm'> Tailored websites built to meet your unique business needs.</p>
             </motion.div>
 
             <motion.div variants = {itemVariantOne} className='shadow-md border border-gray-500 rounded-md flex flex-col items-center p-2'>
                 <img src={integration} alt="" className='size-16'/>
                 <p className='text-accent'>Api integration</p>
-                <p className='text-sm'>Very well then</p>
+                <p className='text-sm'> Enhance functionality with external services.</p>
             </motion.div>
             <motion.div variants = {itemVariantOne} className='shadow-md border border-gray-500 rounded-md flex flex-col items-center p-2'>
                 <img src={interfaced} alt="" className='size-16'/>
                 <p className='text-accent'>Interactive UI designs</p>
-                <p className='text-sm'>Very well then</p>
+                <p className='text-sm'>Engaging, user-friendly interfaces.
+
+</p>
             </motion.div>
             <motion.div variants = {itemVariantOne} className='shadow-md border border-gray-500 rounded-md flex flex-col items-center p-2'>
                 <img src={versioncontrol} alt="" className='size-16'/>
                 <p className='text-accent'>Version Control</p>
-                <p className='text-sm'>Very well then</p>
+                <p className='text-sm'>Track changes, collaborate efficiently.</p>
             </motion.div>
             <motion.div variants = {itemVariantOne} className='shadow-md border-gray-500 border rounded-md flex flex-col items-center p-2'>
                 <img src={single} alt="" className='size-16'/>
                 <p className='text-accent'>Single page Apps</p>
-                <p className='text-sm'>Very well then</p>
+                <p className='text-sm'> Fast, fluid, and seamless browsing.</p>
             </motion.div>
             <motion.div variants = {itemVariantOne} className='shadow-md border border-gray-500 rounded-md flex flex-col items-center flex-wrap: wrap p-2'>
                 <img src={optimization} alt="" className='size-16'/>
                 <p className='text-accent'>web optimization</p>
-                <p className='text-sm'>Very well then</p>
+                <p className='text-sm'>Speed, SEO, and smooth performance.</p>
             </motion.div>
         </div>
     </motion.div>
