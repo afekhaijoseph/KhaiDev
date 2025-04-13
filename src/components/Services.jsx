@@ -42,9 +42,9 @@ const itemVariantOne = {
 
 const Services = () => {
   return (
-<motion.div variants={servVariants} initial= "init" whileInView='final' viewport={{ once: true }} className=' my-14' >
+<motion.div id="services" variants={servVariants} initial= "init" whileInView='final' viewport={{ once: true }} className=' my-14' >
         <motion.h3  variants = {itemVariantOne} className='text-center font-semibold text-2xl'>Services</motion.h3>
-        <motion.p variants = {itemVariantOne} className='py-4 text-center'>I offer alot of services which include</motion.p>
+        <motion.p variants = {itemVariantOne} className='py-4 text-center'>Explore the services I offer to help you create fast, modern and responsive websites.</motion.p>
         <div className='grid grid-cols-2 gap-4 text-center md:grid-cols-3'>
             <motion.div variants = {itemVariantOne} className='shadow-md border border-gray-500 rounded-md flex flex-col items-center p-2'>
                 <img src={custom} alt="" className='size-16'/>

@@ -15,7 +15,7 @@ export default {
         shadow: "#27253d",
       },
       fontFamily: {
-        montserrat: ['"Montserrat", sans-serif'],
+        sora: ['"Sora"'],
       },
     },
   },

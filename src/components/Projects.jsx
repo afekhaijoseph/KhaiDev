@@ -40,9 +40,9 @@ const cardVariants = {
 }
 const Projects = () => {
   return (
-    <motion.div variants= {projectVariants} initial = 'init' whileInView='final' viewport={{once: true}} className='text-center my-6'>
+    <motion.div id="projects" variants= {projectVariants} initial = 'init' whileInView='final' viewport={{once: true}} className='text-center my-6'>
         <motion.h2 className='text-2xl font-semibold my-4'>Projects</motion.h2>
-        <motion.p>Below are some of the projects i have worked on in the past</motion.p>
+        <motion.p>Below are some of the projects i have worked on in the past.</motion.p>
 
         <motion.div className='my-4'>
             <motion.div  variants = {cardVariants} initial = 'init' whileInView='final' viewport={{once: true}} className='rounded-md my-10 pb-4 text-center bg-gradient-to-r from-[#2c6470] to-[#403c6d] shadow-[0_8px_20px_rgba(140,150,255,0.2)]'>
@@ -55,7 +55,7 @@ const Projects = () => {
                     <p className='text-sm p-3'>This is a simple color guessing game which shows a set of similar looking colors and 
                         a target color. You are to guess which of the colors corresponds with the target color. Trust me, it's one of them 👀
                     </p>
-                    <button className='bg-accent p-1 rounded-md text-pritext'>Live Demo</button>
+                    <a href="https://color-game-sepia-eight.vercel.app/" className='bg-accent p-1 rounded-md text-pritext'>Live Demo</a>
                 </div>
             </motion.div>
 
@@ -67,7 +67,7 @@ const Projects = () => {
                 <div>
                     <h3 className='font-semibold text-lg m-2'>Ticket Generator</h3>
                     <p className='text-sm p-3'> This is a web applications built with the intention of making ticket sales for events, shows, e.t.c. tickets are downloadable as proof of payment.</p>
-                    <button className='bg-accent p-1 rounded-md text-pritext'>Live Demo</button>
+                    <a href="https://ticket-generator-sm6u.vercel.app/" className='bg-accent p-1 rounded-md text-pritext'>Live Demo</a>
                 </div>
             </motion.div>
         </motion.div>
