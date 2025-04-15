@@ -39,9 +39,9 @@ const hamVariantOne = {
     opacity: 1,
     width: '100%',
     transition: {
-      delay: 0.5,
+      delay: 0.2,
       ease: "easeInOut",
-      repeat: 6, 
+      repeat: 4, 
       repeatType: "reverse" 
   }
 
@@ -56,9 +56,9 @@ const hamVariantTwo = {
   final : {
     width: '75%',
     transition: {
-      delay: 0.5,
+      delay: 0.2,
       ease: "easeInOut",
-      repeat: 6, 
+      repeat: 4, 
       repeatType: "reverse" 
       }
   }
@@ -119,7 +119,7 @@ export const NavBar = () => {
         <button className="hidden bg-accent h-fit rounded-md py-1 px-3 text-white md:inline-flex">Hire Me</button>
       </div>
       {isOpen && (
-        <div className="md:hidden bg-background w-full px-4 py-2 flex flex-col gap-4 text-accent border-b border-gray-200 absolute">
+        <div className="md:hidden bg-background w-full px-4 py-2 flex flex-col gap-4 text-accent border-b border-gray-500 absolute">
           <a onClick={() => scrollToSection("about")} className="hover:text-blue-500">
             About
           </a>
