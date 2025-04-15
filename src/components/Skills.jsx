@@ -10,7 +10,7 @@ import '../../src/index.css'
 const Skills = () => {
   return (
     <div id="skills" className='py-6 text-center'>
-        <h2 className='text-2xl font-semibold my-3'>Work tools</h2>
+        <h2 className='text-2xl font-semibold my-3'>Skills</h2>
         <p>These are the tools i use using in constructing your website and web applications on the internet.</p>
         <div className="flex items-center overflow-hidden my-3 w-full ">
         <div className="grid grid-cols-3 items-center place-items-center my-3 gap-3 w-full md:grid-cols-6">

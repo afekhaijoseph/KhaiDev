@@ -112,7 +112,7 @@ export const NavBar = () => {
             <motion.p variants={hoverVariants} whileHover='hover' className='hover:text-pritext'>Home</motion.p>
             <motion.p variants={hoverVariants} whileHover='hover' className='hover:text-pritext' onClick={()=>scrollToSection('about')}>About</motion.p>
             <motion.p variants={hoverVariants} whileHover='hover' className='hover:text-pritext' onClick={()=>scrollToSection('services')}>Services</motion.p>
-            <motion.p variants={hoverVariants} whileHover='hover' className='hover:text-pritext' onClick={()=>scrollToSection('skills')}>Work Tools</motion.p>
+            <motion.p variants={hoverVariants} whileHover='hover' className='hover:text-pritext' onClick={()=>scrollToSection('skills')}>Skills</motion.p>
             <motion.p variants={hoverVariants} whileHover='hover' className='hover:text-pritext' onClick={()=>scrollToSection('projects')}>Projects</motion.p>
             <motion.p variants={hoverVariants} whileHover='hover' className='hover:text-pritext' onClick={()=>scrollToSection('contact')}>Contact</motion.p>
         </div>
@@ -127,7 +127,7 @@ export const NavBar = () => {
             Services
           </a>
           <a onClick={() => scrollToSection("skills")} className="hover:text-blue-500">
-            Work Tools
+            Skills
           </a>
           <a onClick={() => scrollToSection("projects")} className="hover:text-blue-500">
             Projects

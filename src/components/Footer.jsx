@@ -25,7 +25,7 @@ const Footer = () => {
             <motion.p variants={hoverVariants} whileHover='hover' className='hover:text-pritext'>Home</motion.p>
             <motion.p variants={hoverVariants} whileHover='hover'className='hover:text-pritext'>About</motion.p>
             <motion.p variants={hoverVariants} whileHover='hover'className='hover:text-pritext'>Services</motion.p>
-            <motion.p variants={hoverVariants} whileHover='hover'className='hover:text-pritext'>Work Tools</motion.p>
+            <motion.p variants={hoverVariants} whileHover='hover'className='hover:text-pritext'>Skills</motion.p>
             <motion.p variants={hoverVariants} whileHover='hover'className='hover:text-pritext'>Projects</motion.p>
             <motion.p variants={hoverVariants} whileHover='hover' className='hover:text-pritext'>Contact</motion.p>
         </div>
