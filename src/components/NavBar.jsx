@@ -68,8 +68,8 @@ export const NavBar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   const scrollToSection = (id) => {
-    console.log('clicked')
     document.getElementById(id)?.scrollIntoView({ behavior: "smooth" });
+    setIsOpen(prev => !prev)
   };
 
   const handleClick = () => {
@@ -123,20 +123,20 @@ export const NavBar = () => {
           <a onClick={() => scrollToSection("about")} className="hover:text-blue-500">
             About
           </a>
-          <a onClick={() => scrollToSection("products")} className="hover:text-blue-500">
+          <a onClick={() => scrollToSection("services")} className="hover:text-blue-500">
             Services
           </a>
-          <a onClick={() => scrollToSection("whychoose")} className="hover:text-blue-500">
+          <a onClick={() => scrollToSection("skills")} className="hover:text-blue-500">
             Work Tools
           </a>
-          <a onClick={() => scrollToSection("faqs")} className="hover:text-blue-500">
+          <a onClick={() => scrollToSection("projects")} className="hover:text-blue-500">
             Projects
           </a>
           <button
-            onClick={() => scrollToSection("git")}
-            className="bg-gradient-to-r from-[rgb(255,0,204,0.8)] to-[rgb(51,51,153,0.8)] text-white p-2 rounded-md"
+            onClick={() => scrollToSection("contact")}
+            className="bg-gradient-to-r from-accentshade to-accent text-white p-2 rounded-md"
           >
-            Contact
+            Hire Me
           </button>
         </div>
       )}

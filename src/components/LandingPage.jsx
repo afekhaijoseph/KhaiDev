@@ -74,18 +74,18 @@ const LandingPage = () => {
           </div>
             <h1 className='text-accent text-5xl mb-4 text-transparent bg-clip-text bg-gradient-to-b from-yellow-500 via-accentshade to-yellow-500'>A Pro Frontend Developer.</h1>  
             <div className="flex justify-between w-fit gap-4 md:mx-0">
-              <motion.div whileHover={{scale: 1.2}}>
+              <motion.a href='https://x.com/padrethefather' target="_blank" whileHover={{scale: 1.2}}>
                 <FontAwesomeIcon icon={faXTwitter} size='2x'/>
-              </motion.div>
-              <motion.div>
+              </motion.a>
+              <motion.a href='https://github.com/afekhaijoseph' target="_blank">
                 <FontAwesomeIcon icon={faGithub} size='2x'/>
-              </motion.div>
-              <motion.div>
+              </motion.a>
+              <motion.a href='https://www.linkedin.com/in/afekhai-joseph-b557501ba/' target="_blank">
                 <FontAwesomeIcon icon={faLinkedinIn} size='2x'/>
-              </motion.div>
-              <motion.div>
+              </motion.a>
+              <motion.a href='https://wa.link/8sns92' target="_blank">
                 <FontAwesomeIcon icon={faWhatsapp} size='2x'/>
-              </motion.div>  
+              </motion.a>  
             </div>
             <div className=''></div>
             <div className="flex w-11/12 mx-auto my-3 gap-4 pt-4 grow md:mx-0">
