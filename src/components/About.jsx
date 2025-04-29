@@ -7,7 +7,7 @@ import { motion } from 'framer-motion';
 const aboutVariants = {
   init : {
     opacity: 0,
-    x: -100,
+    x: -50,
   },
   final : {
     opacity: 1,
@@ -17,6 +17,7 @@ const aboutVariants = {
       ease: "easeInOut",
       type: 'spring',
       stiffness: 120,
+      staggerChildren: 0.3,
     }
   }
 }
@@ -44,11 +45,9 @@ const imageVariants = {
     opacity: 1,
     x: 0,
     transition: {
-      delay: 0.2,
-      duration: 0.3,
-      ease: "easeIn",
+      ease: "easeInOut",
       type: 'spring',
-      stiffness: '120',
+      stiffness: 110,
       damping: 10,
     }
   }
@@ -56,18 +55,18 @@ const imageVariants = {
 
 const About = () => {
   return (
-    <div id="about" className='flex flex-col gap-5 items-center mt-24 mb-6'>
-        <motion.h2 variants={aboutVariants} initial = 'init' viewport={{once:true}} whileInView= 'final' className='text-2xl font-semibold'>Who Am I?</motion.h2>
+    <motion.div variants={aboutVariants} initial = 'init'  whileInView= 'final' viewport={{once:true, amount:0.2}} id="about" className='flex flex-col gap-5 items-center mt-24 mb-6'>
+        <motion.h2 variants={aboutVariants} className='text-2xl font-semibold'>Who Am I?</motion.h2>
         <div className='flex flex-col md:flex-row items-center gap-20'>
-        <motion.div variants={imageVariants} initial = 'init' whileInView= 'final' viewport={{once:true}} className='w-full mt-28 md:max-w-[350px] md:basis-full '>
+        <motion.div variants={imageVariants} className='w-full mt-28 md:max-w-[350px] md:basis-full '>
               <Image/>
-          </motion.div>
+        </motion.div>
           <div className="basis-full leading-loose text-lg">
              <Typewriter text = "I am a frontend specialist who enjoys building intuitive, responsive, and visually appealing web applications with modern frontend tools like React, javascript and TailwindCSS amongst others, I thrive in turning creative ideas into functional digital experiences and creating solutions to everyday human problems. I also a very curious learner who is more interested in why things work rather than how to work."/>
           </div>
         </div>
          <motion.button variants={buttonVariants} whileHover= 'hover' className='bg-accent p-1.5 rounded-md'>Download Cv <FontAwesomeIcon icon={faDownload} className='text-gray-100'/></motion.button>
-    </div> 
+    </motion.div> 
   )
 }
 

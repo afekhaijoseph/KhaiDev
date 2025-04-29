@@ -1,4 +1,4 @@
-import padre from '../assets/images/padre.png'
+import padre from '../assets/images/padre.webp'
 const Image = () => {
   return (
     <div className="bg-accent w-full aspect-square mx-auto rounded-full relative">
