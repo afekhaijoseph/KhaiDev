@@ -17,7 +17,7 @@ const aboutVariants = {
       ease: "easeInOut",
       type: 'spring',
       stiffness: 120,
-      staggerChildren: 0.3,
+      staggerChildren: 1,
     }
   }
 }
@@ -46,9 +46,7 @@ const imageVariants = {
     x: 0,
     transition: {
       ease: "easeInOut",
-      type: 'spring',
-      stiffness: 110,
-      damping: 10,
+      type: 'tween',
     }
   }
 }
@@ -62,7 +60,7 @@ const About = () => {
               <Image/>
         </motion.div>
           <div className="basis-full leading-loose text-lg">
-             <Typewriter text = "I am a frontend specialist who enjoys building intuitive, responsive, and visually appealing web applications with modern frontend tools like React, javascript and TailwindCSS amongst others, I thrive in turning creative ideas into functional digital experiences and creating solutions to everyday human problems. I also a very curious learner who is more interested in why things work rather than how to work."/>
+             {/* <Typewriter text = "I am a frontend specialist who enjoys building intuitive, responsive, and visually appealing web applications with modern frontend tools like React, javascript and TailwindCSS amongst others, I thrive in turning creative ideas into functional digital experiences and creating solutions to everyday human problems. I also a very curious learner who is more interested in why things work rather than how to work."/> */}
           </div>
         </div>
          <motion.button variants={buttonVariants} whileHover= 'hover' className='bg-accent p-1.5 rounded-md'>Download Cv <FontAwesomeIcon icon={faDownload} className='text-gray-100'/></motion.button>
