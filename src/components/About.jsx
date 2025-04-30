@@ -51,6 +51,15 @@ const imageVariants = {
   }
 }
 
+const typingVariant = {
+  init : {
+    x: 100
+  },
+  final: {
+    x: 0
+  }
+}
+
 const About = () => {
   return (
     <motion.div variants={aboutVariants} initial = 'init'  whileInView= 'final' viewport={{once:true, amount:0.2}} id="about" className='flex flex-col gap-5 items-center mt-24 mb-6'>
@@ -59,9 +68,9 @@ const About = () => {
         <motion.div variants={imageVariants} className='w-full mt-28 md:max-w-[350px] md:basis-full '>
               <Image/>
         </motion.div>
-          <div className="basis-full leading-loose text-lg">
-             {/* <Typewriter text = "I am a frontend specialist who enjoys building intuitive, responsive, and visually appealing web applications with modern frontend tools like React, javascript and TailwindCSS amongst others, I thrive in turning creative ideas into functional digital experiences and creating solutions to everyday human problems. I also a very curious learner who is more interested in why things work rather than how to work."/> */}
-          </div>
+          <motion.div variant={typingVariant} className="basis-full leading-loose text-lg">
+             <Typewriter text = "I am a frontend specialist who enjoys building intuitive, responsive, and visually appealing web applications with modern frontend tools like React, javascript and TailwindCSS amongst others, I thrive in turning creative ideas into functional digital experiences and creating solutions to everyday human problems. I also a very curious learner who is more interested in why things work rather than how to work."/>
+          </motion.div>
         </div>
          <motion.button variants={buttonVariants} whileHover= 'hover' className='bg-accent p-1.5 rounded-md'>Download Cv <FontAwesomeIcon icon={faDownload} className='text-gray-100'/></motion.button>
     </motion.div> 
