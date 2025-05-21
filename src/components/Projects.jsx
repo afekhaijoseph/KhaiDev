@@ -24,9 +24,9 @@ const projectVariants = {
 
 
 const projects = [
-    {image: colorgame, title: 'Color Game', description: 'This is a simple color guessing game which shows a set of similar looking colors and a target color. You are to guess which of the colors corresponds with the target color. Trust me, it\'s one of them 👀', link: '"https://color-game-sepia-eight.vercel.app/"'},
-    {image: ticketgenerator, title: 'Ticket Generator', description: 'This is a web applications built with the intention of making ticket sales for events, shows, e.t.c. tickets are downloadable as proof of payment.', link: '"https://ticket-generator-sm6u.vercel.app/"'},
-    {image: goodtech, title: 'GoodTech', description: 'This was a website creating for a tech company which specializes in building AI driven products. The website was created to showcase those products and make the accessable to online users.', link: '"https://good-tech.vercel.app/"'},
+    {image: colorgame, title: 'Color Game', description: 'This is a simple color guessing game which shows a set of similar looking colors and a target color. You are to guess which of the colors corresponds with the target color. Trust me, it\'s one of them 👀', link: 'https://color-game-sepia-eight.vercel.app/'},
+    {image: ticketgenerator, title: 'Ticket Generator', description: 'This is a web applications built with the intention of making ticket sales for events, shows, e.t.c. tickets are downloadable as proof of payment.', link: 'https://ticket-generator-sm6u.vercel.app/'},
+    {image: goodtech, title: 'GoodTech', description: 'This was a website creating for a tech company which specializes in building AI driven products. The website was created to showcase those products and make the accessable to online users.', link: 'https://good-tech.vercel.app/'},
 ]
 const Projects = () => {
   return (
@@ -43,4 +43,4 @@ const Projects = () => {
   )
 }
 
-export default Projects
+export default Projects  
