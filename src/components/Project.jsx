@@ -27,7 +27,7 @@ const Project = ({image, title, description, link}) => {
           </div>
           <div>
             <h3 className='font-semibold text-lg m-2'>{title}</h3>
-            <p className='text-sm p-3'>{description}</p>
+            <p className='text-base p-3'>{description}</p>
             <a href={link} className='bg-accent p-1 rounded-md text-pritext'>Live Demo</a>
           </div>
       </motion.div>
