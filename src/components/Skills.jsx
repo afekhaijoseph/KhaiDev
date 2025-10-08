@@ -76,7 +76,7 @@ const Skills = () => {
     return controls.stop;
   }, [width, xTranslation])
   return (
-    <div id="skills" className='py-10 text-center'>
+    <div id="skills" className='py-10 text-center mt-36'>
         <h2 className='text-2xl font-semibold my-3'>Skills</h2>
         <p>These are the tools i use using in constructing your website and web applications on the internet.</p>
         <div className="flex items-center overflow-hidden my-3 w-full ">

@@ -40,10 +40,10 @@ const buttonVariants = {
 
 const About = () => {
   return (
-    <motion.div variants={aboutVariants} initial = 'init'  whileInView= 'final' viewport={{once:true, amount:0.2}} id="about" className='flex flex-col gap-5 items-center mt-24 mb-16'>
+    <motion.div variants={aboutVariants} initial = 'init'  whileInView= 'final' viewport={{once:true, amount:0.2}} id="about" className='flex flex-col gap-5 items-center mb-16'>
         <motion.h2 variants={aboutVariants} className='text-2xl font-semibold'>Who Am I?</motion.h2>
         <div className='flex flex-col md:flex-row items-center gap-20'>
-        <div className='w-full mt-28 md:max-w-[350px] md:basis-full '>
+        <div className='w-full mt-52 md:max-w-[350px] md:basis-full '>
               <Image/>
         </div>
           <div className="basis-full leading-loose text-lg">
