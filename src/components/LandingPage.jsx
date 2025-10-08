@@ -90,7 +90,7 @@ const LandingPage = () => {
             <div className=''></div>
             <div className="flex w-11/12 mx-auto my-3 gap-4 pt-4 grow md:mx-0">
             <motion.button variants={{...buttonVariants, hover: hireMeHover}} initial = 'init' animate='final' whileHover='hover' className=' bg-accent h-fit rounded-md p-1 basis-full text-white'>Hire me</motion.button>
-            <motion.button variants={{...buttonVariants, hover: resumeHover}} initial = 'init' animate='final' whileHover='hover' className='border h-fit border-accent rounded-md p-1 text-accent basis-full'>Download CV</motion.button>
+            <motion.a href="/resume.pdf" download variants={{...buttonVariants, hover: resumeHover}} initial = 'init' animate='final' whileHover='hover' className='border h-fit border-accent rounded-md p-1 text-accent basis-full text-center'>Download CV</motion.a>
             </div>
           </div>
           <motion.div variants={imageVariants} initial = 'init' whileInView= 'final' viewport={{once:true}} className='w-full mt-32 md:max-w-[350px] md:ml-auto md:mt-20 md:basis-full'>

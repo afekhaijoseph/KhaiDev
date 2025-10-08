@@ -35,6 +35,7 @@ const itemVariantOne = {
     final: {
         opacity: 1,
         y:0,
+       
     }
 
 }

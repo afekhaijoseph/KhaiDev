@@ -7,13 +7,13 @@ import { motion } from 'framer-motion';
 const aboutVariants = {
   init : {
     opacity: 0,
-    x: -50,
+    y: 100,
   },
   final : {
     opacity: 1,
     x: 0,
     transition: {
-      delay: 0.5,
+      delay: 0.3,
       ease: "easeInOut",
       type: 'spring',
       stiffness: 120,
@@ -36,43 +36,23 @@ const buttonVariants = {
   
 }
 
-const imageVariants = {
-  init : {
-    opacity: 0,
-    x: -100,
-  },
-  final : {
-    opacity: 1,
-    x: 0,
-    transition: {
-      ease: "easeInOut",
-      type: 'tween',
-    }
-  }
-}
 
-const typingVariant = {
-  init : {
-    x: 100
-  },
-  final: {
-    x: 0
-  }
-}
 
 const About = () => {
   return (
-    <motion.div variants={aboutVariants} initial = 'init'  whileInView= 'final' viewport={{once:true, amount:0.2}} id="about" className='flex flex-col gap-5 items-center mt-24 mb-6'>
+    <motion.div variants={aboutVariants} initial = 'init'  whileInView= 'final' viewport={{once:true, amount:0.2}} id="about" className='flex flex-col gap-5 items-center mt-24 mb-16'>
         <motion.h2 variants={aboutVariants} className='text-2xl font-semibold'>Who Am I?</motion.h2>
         <div className='flex flex-col md:flex-row items-center gap-20'>
-        <motion.div variants={imageVariants} className='w-full mt-28 md:max-w-[350px] md:basis-full '>
+        <div className='w-full mt-28 md:max-w-[350px] md:basis-full '>
               <Image/>
-        </motion.div>
-          <motion.div variant={typingVariant} className="basis-full leading-loose text-lg">
-             <Typewriter text = "I am a frontend specialist who enjoys building intuitive, responsive, and visually appealing web applications with modern frontend tools like React, javascript and TailwindCSS amongst others, I thrive in turning creative ideas into functional digital experiences and creating solutions to everyday human problems. I also a very curious learner who is more interested in why things work rather than how to work."/>
-          </motion.div>
         </div>
-         <motion.button variants={buttonVariants} whileHover= 'hover' className='bg-accent p-1.5 rounded-md'>Download Cv <FontAwesomeIcon icon={faDownload} className='text-gray-100'/></motion.button>
+          <div className="basis-full leading-loose text-lg">
+             <Typewriter text = "I am a frontend specialist who enjoys building intuitive, responsive, and visually appealing web applications with modern frontend tools like React, javascript and TailwindCSS amongst others, I thrive in turning creative ideas into functional digital experiences and creating solutions to everyday human problems. I also a very curious learner who is more interested in why things work rather than how to work."/>
+          </div>
+        </div>
+         <motion.a href="/resume.pdf" download variants={buttonVariants} whileHover= 'hover' className='bg-accent p-1.5 rounded-md text-center flex gap-2 items-center'>
+         <p>Download Cv</p>  
+         <FontAwesomeIcon icon={faDownload} className='text-gray-100'/></motion.a>
     </motion.div> 
   )
 }
