@@ -82,7 +82,7 @@ const Skills = () => {
         <div className="flex items-center overflow-hidden my-3 w-full ">
         <motion.div className="flex items-center my-3 gap-4 px-3" ref={ref} style={{x:xTranslation}}>
           {[...images,...images].map((image, index) => (
-            <div  key={index} className='bg-background shadow-2xl shadow-black/60 w-full px-4 py-2 rounded-lg flex flex-col items-center flex-1 min-w-0'>
+            <div  key={index} className='bg-background shadow-2xl shadow-black/60 w-full px-4 py-2 rounded-lg flex flex-col items-center flex-1 min-w-0 gap-1'>
                <img src={image.image} className="max-w-20 md:max-w-26" alt={image.alt} />
                <p>{image.name}</p>
             </div>

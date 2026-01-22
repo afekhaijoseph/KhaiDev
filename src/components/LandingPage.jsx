@@ -72,7 +72,7 @@ const LandingPage = () => {
           <div className='mt-6 md:mt-0'>
               <p className='self-start tracking-wider'>Hi there, Afekhai Joseph here.</p>
           </div>
-            <h1 className='text-accent text-5xl mb-4 text-transparent bg-clip-text bg-gradient-to-b from-yellow-500 via-accentshade to-yellow-500'>A Pro Frontend Developer.</h1>  
+            <h1 className='text-accent text-5xl mb-4 text-transparent bg-clip-text bg-gradient-to-b from-yellow-500 via-accentshade to-yellow-500'>A Pro web Developer.</h1>  
             <div className="flex justify-between w-fit gap-4 md:mx-0">
               <motion.a href='https://x.com/padrethefather' target="_blank" whileHover={{scale: 1.2}}>
                 <FontAwesomeIcon icon={faXTwitter} size='2x'/>

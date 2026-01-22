@@ -11,7 +11,9 @@ const Homepage = () => {
   return (
     <div className='font-sora text-gray-300'>
       <NavBar/>
-      <div className='w-11/12 mx-auto md:w-3/4'>
+      <div className='w-11/12
+       mx-auto
+        md:w-3/4'>
         <LandingPage/>
         <Services/>
         <About/>
