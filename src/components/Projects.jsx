@@ -39,7 +39,7 @@ const Projects = () => {
         <motion.h2 className='text-2xl font-semibold my-4'>Projects</motion.h2>
         <motion.p>Below are some of the projects i have worked on in the past.</motion.p>
 
-        <motion.div className='grid grid-cols-3 gap-6'>
+        <motion.div className='grid md:grid-cols-2 lg:grid-cols-3 gap-6'>
             {projects.map(project =>(
             <Project key={project.title} {...project}/>
             ))}
